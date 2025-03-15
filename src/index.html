@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Launch Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Character Launch Game</h1>
+            <div class="score-display">Score: <span id="score">0</span></div>
+        </div>
+        
+        <div class="character-selection">
+            <h2>Select Your Character</h2>
+            <div class="characters">
+                <div class="character-option selected" data-character="mouse">
+                    <div class="character-icon mouse">🐭</div>
+                    <p>Mouse</p>
+                </div>
+                <div class="character-option" data-character="apple">
+                    <div class="character-icon apple">🍎</div>
+                    <p>Apple</p>
+                </div>
+                <div class="character-option" data-character="fish">
+                    <div class="character-icon fish">🐟</div>
+                    <p>Fish</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-controls">
+            <div class="angle-control">
+                <label for="angle-slider">Launch Angle: <span id="angle-value">45</span>°</label>
+                <input type="range" id="angle-slider" min="0" max="90" value="45">
+                <div class="trajectory-preview">
+                    <div class="launch-point"></div>
+                    <div id="trajectory-line"></div>
+                </div>
+            </div>
+            <button id="fire-button">FIRE!</button>
+        </div>
+        
+        <div class="game-area">
+            <canvas id="game-canvas"></canvas>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>

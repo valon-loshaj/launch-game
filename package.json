@@ -1,16 +1,22 @@
 {
   "name": "launch-game",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A fun trajectory-based game where players launch characters to hit targets",
+  "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server src --port=3000",
-    "build": "mkdir -p dist && cp -r src/* dist/"
+    "build": "mkdir -p dist && cp -r src/* dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "game",
+    "html5",
+    "canvas",
+    "trajectory",
+    "physics"
+  ],
+  "author": "Valon Loshaj",
+  "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.2"
   }
